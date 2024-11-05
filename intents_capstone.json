@@ -1,0 +1,44 @@
+{
+    "intents": [
+        {
+            "tag": "saludo",
+            "patterns": ["hola", "qué tal", "cómo estás", "saludos"],
+            "responses": ["Hola, ¿Cómo puedo ayudarte?", "Hola!", "Buenos días!", "¿Cómo estás?"]
+        },
+        {
+            "tag": "saludo2",
+            "patterns": ["Como estas", "¿Todo bien?", "Hey", "Que tal?"],
+            "responses": ["Estoy bien", "Todo en orden!", "Hola, ¿Como te va?", "¡Hola!, Aqui estoy para lo que necesites"]
+        },
+        {
+            "tag": "despedida",
+            "patterns": ["Adios", "Hastas luego", "Nos vemos"],
+            "responses": ["¡Adios!", "¡Hasta luego!", "¡Nos vemos! ¡Vuelve pronto!"]
+        },
+        {
+            "tag": "consultar_stock",
+            "patterns": ["¿Tienes [producto]?", "¿Hay [producto] disponible?", "Quiero saber si hay [producto]"],
+            "responses": ["Sí, tenemos [producto] en stock.", "Actualmente tenemos [producto] disponible."]
+        },
+        {
+            "tag": "ver_productos",
+            "patterns": ["¿Qué productos tienes?", "Lista de productos", "¿Qué verduras están disponibles?"],
+            "responses": ["Disponemos de zanahorias, papas, tomates, lechugas y pimientos.", "Tenemos zanahorias, papas, tomates, lechugas y pimientos disponibles."]
+        },
+        {
+            "tag": "agregar_carrito",
+            "patterns": ["Añadir [producto] al carrito", "Quiero comprar [producto]", "Agregar [producto] a mi carrito"],
+            "responses": ["[producto] ha sido añadido a tu carrito.", "He añadido [producto] a tu carrito de compras."]
+        },
+        {
+            "tag": "consultar_carrito",
+            "patterns": ["¿Qué hay en mi carrito?", "Ver mi carrito", "¿Cuáles son los productos en el carrito?"],
+            "responses": ["Tu carrito contiene los siguientes productos: [lista_carrito].", "Actualmente, en tu carrito están: [lista_carrito]."]
+        },
+        {
+            "tag": "realizar_compra",
+            "patterns": ["Comprar los productos", "Quiero hacer la compra", "Proceder al pago"],
+            "responses": ["Tu compra ha sido realizada exitosamente. Gracias por comprar con nosotros!", "La compra ha sido completada. ¡Gracias!"]
+        }
+    ]
+}
