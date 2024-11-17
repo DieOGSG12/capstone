@@ -1,62 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="scripts.js" defer></script>
     <title>Venta de verduras-Frutas</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
-<!--Barra de navegacion-->
-<div class="top-nav">
-    <a class="active" href="#home">Home</a>
-    <a href="#about">Nosotros</a>
-  <a href="#contact">Contacto</a>
-  <div class="search-container">
-    <form action="/action_page.php">
-      <input type="text" placeholder="Buscar..." name="search">
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
-  </div>  
-</div>
+  <header class="header"> 
 
+    <!--Barra de navegacion-->
+    <div class="top-nav">
+      <a class="active" href="#home"><i class="fa fa-fw fa-home"></i>Home</a>
+      <a href="#">Nosotros</a>
+      <a href="#">Contacto</a>
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Buscar..." name="search">
+        </form>
+      </div>  
+    </div>
 
-<!-- Sección principal de bienvenida -->
-<section class="hero">
-    <h1>Automatiza tu Verdulería con Nuestro Chatbot</h1>
-    <p>Ofrecemos un servicio de chatbot diseñado para ayudar a las verdulerías a mejorar la atención al cliente y optimizar sus procesos.</p>
-    <button onclick="location.href='#servicios'">Descubre el Chatbot</button>
-</section>
+    <!-- Sección principal de bienvenida -->
+    <div class="header-content container">
+      <div class="header-text">
+        <h1>Automatiza tu Verdulería con Nuestro Chatbot</h1>
+        <p>Ofrecemos un servicio de chatbot diseñado para ayudar a las verdulerías a mejorar la atención al cliente y optimizar sus procesos.</p>
+      </div>
+    </div>
+  </header>
 
 <!-- Sección de beneficios -->
-<section id="beneficios">
+<div class="row">
+  <div class="side">
     <h2>Beneficios de Nuestro Chatbot</h2>
     <ul>
-        <li>Atención al cliente 24/7 para responder preguntas frecuentes.</li>
-        <li>Facilidad para gestionar pedidos y disponibilidad de productos.</li>
-        <li>Ahorro de tiempo en la atención personalizada.</li>
+      <li href ="#">Atención al cliente 24/7 para responder preguntas frecuentes</li>
+      <li href="#">Facilidad para gestionar pedidos y disponibilidad de productos</li>    
+      <li href="#">Ahorro de tiempo en la atención personalizada</li>
     </ul>
-</section>
+    <button onclick="location.href='#'">Saber más</button>
+  </div>
 
-<!-- Sección de servicios de chatbot -->
-<section id="servicios">
-    <h2>Servicio de Chatbot para Verdulerías</h2>
-    <p>Automatiza la atención al cliente de tu negocio con nuestro asistente virtual especializado en productos frescos y necesidades de verdulerías.</p>
-    <button onclick="abrirChatbot()">Abrir Chatbot</button>
-</section>
+  <!-- Sección de servicios de chatbot -->
+  <section class="main">
+      <h2>Servicio de Chatbot para Verdulerías</h2>
+      <p>Automatiza la atención al cliente de tu negocio con nuestro asistente virtual especializado en productos frescos y necesidades de verdulerías.</p>
+      <button onclick="abrirChatbot()">Abrir Chatbot</button>
 
-<!-- Sección de contacto -->
-<section id="contacto">
-    <h2>Contáctanos</h2>
-    <p>¿Interesado en integrar el chatbot en tu verdulería? Contáctanos para una demostración.</p>
-    <a href="mailto:info@chatbotverdulerias.com">info@chatbotverdulerias.com</a>
-</section>
+      <!--Seccion Objetivo del chatbot-->
+      <div class="main-objetivo">
+        <h2>Objetivo del Chatbot</h2>
+        <p>Nuestro objetivo con el desarrollo de nuestro chatbot es poder optimizar el servicio, atención y gestión de la atención usuario/cliente.
+          Implementando servicios AI dentro del chatbot para que este entregue información precisa a cada uno de ustedes. Nuestro chatbot esta enfocado para el mercado agricola, permitiendo a los pequeños y medianons negocios mejorar su competitividad, reducir costos operativos y tambien ofreciendo un servicio de calidad las 24 horas del dia, los 7 dias de la semana, facilitando una experiencia de compra más eficiente y accesible para sus clientes.</p>
+        <div class="main-objetivos-especificos">
+          <h3>Objetivos Especificos</h3>
+          <ul>
+            <li>Mejora la disponibilidad de atencion 24/7</li>
+            <li>Reducir errores en la gestion de inventarios</li>
+            <li>Automatizar el proceso de compra para una experiencia mas sencilla</li>
+          </ul>
+        </div>
+      </div>
 
-<footer id="pie">
-    <p>&copy; 2024 Chatbot Verdulerías</p>
+      <h2>Servicio de Chatbot para Verdulerías</h2>
+      <p>Automatiza la atención al cliente de tu negocio con nuestro asistente virtual especializado en productos frescos y necesidades de verdulerías.</p>
+      <button onclick="abrirChatbot()">Abrir Chatbot</button>
+      <div class="main-txt">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel egestas metus. Suspendisse fermentum pellentesque justo, ac aliquam erat. Aenean elit mauris, commodo eu massa quis, sollicitudin egestas ex. Suspendisse potenti. Duis ultricies et magna at luctus. Nulla odio lacus, finibus et massa eget, pharetra sagittis magna. In hac habitasse platea dictumst.
+
+          Donec vitae massa purus. Aenean congue tellus finibus dui varius maximus. Sed consectetur tincidunt neque ac cursus. In interdum ac est eget varius. Etiam at nulla nec velit sodales iaculis eget et tellus. Etiam imperdiet, felis nec lacinia aliquet, tellus nulla euismod neque, eget volutpat risus velit at turpis. In sollicitudin nisi purus, a convallis nisi rutrum quis.
+          
+          Nulla facilisi. Quisque et orci dui. Cras ac finibus massa, vitae tincidunt dui. Fusce a rhoncus mi. Nulla vitae condimentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus eu arcu sit amet viverra. Phasellus facilisis vel est id dignissim. Fusce laoreet ligula dictum tortor suscipit, non condimentum felis semper.
+          
+          Donec tempus tortor nisl, et rutrum quam aliquet nec. Vestibulum nisi tellus, dapibus non interdum sed, sodales eget dolor. Sed ut pellentesque neque, ac vehicula lacus. Nullam feugiat ex ut mollis bibendum. Praesent in vestibulum leo. Mauris vitae luctus diam, nec lacinia turpis. Morbi venenatis luctus ligula nec aliquet. Fusce tristique tellus ex, non congue est tempor sed. Integer a purus ex. Fusce pellentesque mauris at augue cursus euismod. Pellentesque eu lectus a augue bibendum euismod. Duis porta ipsum lectus, non pharetra turpis facilisis a. Proin ut est vitae nisl viverra euismod. Sed malesuada tortor id elit sollicitudin semper.
+          
+          Suspendisse cursus id lectus in cursus. Vivamus porttitor id nisi rutrum tristique. Nullam turpis sem, tempus ut lacus tempus, volutpat condimentum sem. Etiam massa justo, volutpat sed ex sed, tincidunt laoreet lacus. Ut et fringilla purus, gravida ornare arcu. Nulla sit amet tincidunt lorem, vel lacinia ex. Suspendisse vitae finibus enim, eu consectetur nisl. Praesent sit amet ultricies ipsum. Vestibulum vel lorem luctus, sagittis purus at, vestibulum augue. Nam a dignissim purus. Praesent sit amet porta leo. Integer venenatis efficitur leo, eleifend molestie turpis semper rutrum. Aenean a tempor tellus. Fusce elit arcu, suscipit et ipsum consectetur, imperdiet vehicula purus. Donec venenatis, nisi vel euismod sollicitudin, nulla sapien laoreet nisi, nec tincidunt neque elit at tellus.</p>
+      </div>
+
+      <h2>Servicio de Chatbot para Verdulerías</h2>
+      <p>Automatiza la atención al cliente de tu negocio con nuestro asistente virtual especializado en productos frescos y necesidades de verdulerías.</p>
+      <button onclick="abrirChatbot()">Abrir Chatbot</button>
+      <div class="main-txt">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel egestas metus. Suspendisse fermentum pellentesque justo, ac aliquam erat. Aenean elit mauris, commodo eu massa quis, sollicitudin egestas ex. Suspendisse potenti. Duis ultricies et magna at luctus. Nulla odio lacus, finibus et massa eget, pharetra sagittis magna. In hac habitasse platea dictumst.
+
+          Donec vitae massa purus. Aenean congue tellus finibus dui varius maximus. Sed consectetur tincidunt neque ac cursus. In interdum ac est eget varius. Etiam at nulla nec velit sodales iaculis eget et tellus. Etiam imperdiet, felis nec lacinia aliquet, tellus nulla euismod neque, eget volutpat risus velit at turpis. In sollicitudin nisi purus, a convallis nisi rutrum quis.
+          
+          Nulla facilisi. Quisque et orci dui. Cras ac finibus massa, vitae tincidunt dui. Fusce a rhoncus mi. Nulla vitae condimentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus eu arcu sit amet viverra. Phasellus facilisis vel est id dignissim. Fusce laoreet ligula dictum tortor suscipit, non condimentum felis semper.
+          
+          Donec tempus tortor nisl, et rutrum quam aliquet nec. Vestibulum nisi tellus, dapibus non interdum sed, sodales eget dolor. Sed ut pellentesque neque, ac vehicula lacus. Nullam feugiat ex ut mollis bibendum. Praesent in vestibulum leo. Mauris vitae luctus diam, nec lacinia turpis. Morbi venenatis luctus ligula nec aliquet. Fusce tristique tellus ex, non congue est tempor sed. Integer a purus ex. Fusce pellentesque mauris at augue cursus euismod. Pellentesque eu lectus a augue bibendum euismod. Duis porta ipsum lectus, non pharetra turpis facilisis a. Proin ut est vitae nisl viverra euismod. Sed malesuada tortor id elit sollicitudin semper.
+          
+          Suspendisse cursus id lectus in cursus. Vivamus porttitor id nisi rutrum tristique. Nullam turpis sem, tempus ut lacus tempus, volutpat condimentum sem. Etiam massa justo, volutpat sed ex sed, tincidunt laoreet lacus. Ut et fringilla purus, gravida ornare arcu. Nulla sit amet tincidunt lorem, vel lacinia ex. Suspendisse vitae finibus enim, eu consectetur nisl. Praesent sit amet ultricies ipsum. Vestibulum vel lorem luctus, sagittis purus at, vestibulum augue. Nam a dignissim purus. Praesent sit amet porta leo. Integer venenatis efficitur leo, eleifend molestie turpis semper rutrum. Aenean a tempor tellus. Fusce elit arcu, suscipit et ipsum consectetur, imperdiet vehicula purus. Donec venenatis, nisi vel euismod sollicitudin, nulla sapien laoreet nisi, nec tincidunt neque elit at tellus.</p>
+      </div>
+  </section>
+</div>
+
+<footer class="footer">
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="contacto">
+    <h3>Contacto</h3>
+    <p>Cantactanos para saber que necesitas!!!.</p>
+    <form action="/action_page.php" target="_blank">
+      <input class="w3-input w3-border" type="text" placeholder="Nombre" required name="Name">
+      <input class="w3-input w3-section w3-border" type="email" placeholder="Email" required name="Email">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Descripcion" required name="Descripcion">
+      <button class="w3-button w3-green w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> ESCRIBENOS
+      </button>
+    </form>
+  </div>
 </footer>
 
 </body>
