@@ -1,0 +1,9 @@
+streamlit
+numpy
+nltk
+tensorflow
+fuzzywuzzy
+python-Levenshtein
+mercadopago
+sqlite3
+pandas
